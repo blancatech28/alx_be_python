@@ -1,9 +1,9 @@
 while True:
     task = input("Describe your task: ")
-    task_priority = input("What is the task priority? (high, medium, low):  ")
+    priority = input("What is the task priority? (high, medium, low):  ")
     time_bound = input("Is it time-bound? yes or no: ")
 
-    match task_priority:
+    match priority:
 
         case "high":
             if time_bound == "yes":
