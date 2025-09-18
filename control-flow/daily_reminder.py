@@ -1,7 +1,7 @@
 while True:
-    task = input("Describe your task: ")
-    priority = input("What is the task priority? (high, medium, low):  ")
-    time_bound = input("Is it time-bound? yes or no: ")
+    task = input("Enter your task: ")
+    priority = input("Priority (high/medium/low): ")
+    time_bound = input("Is it time-bound? (yes/no): ")
 
     match priority:
 
@@ -9,7 +9,7 @@ while True:
             if time_bound == "yes":
                 print(f"Reminder: '{task}' is a high priority task that requires immediate attention today!")
             else:
-                print(f"Note: '{task}' is a high priority task. Consider completing it when you have soon.")
+                print(f"Note: '{task}' is a high priority task. Consider completing it soon.")
 
         case "medium":
             if time_bound == "yes":
@@ -23,11 +23,9 @@ while True:
             else:
                 print(f"Note: '{task}' is a low priority task. Take your time.")
 
-
         case _:
             print("Invalid input. Try again")
-            continue
+            continue  # restart the loop if input is invalid
     break
-    
 
 print("Done")
