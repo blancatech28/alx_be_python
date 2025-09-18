@@ -1,4 +1,4 @@
-length = int(input(" Enter the size of the pattern: "))
+length = int(input("Enter the size of the pattern: "))
 row = 0
 
 while row < length:
