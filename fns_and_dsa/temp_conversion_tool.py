@@ -4,7 +4,8 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 try:
     temp = float(input("Enter the temperature to convert: "))
 except ValueError:
-    raise ValueError("Invalid Temperature. Please enter a numerical value")
+    print("Invalid temperature. Please enter a numeric value.")
+    exit()
 
 temp_unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
 
