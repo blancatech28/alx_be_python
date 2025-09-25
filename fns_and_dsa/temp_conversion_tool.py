@@ -2,7 +2,7 @@ FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 try:
-    temp = float(input("Please enter your temp: "))
+    temp = float(input("Enter the temperature to convert: "))
 except ValueError:
     raise ValueError("Invalid Temperature. Please enter a numerical value")
 
